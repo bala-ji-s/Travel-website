@@ -1,0 +1,123 @@
+/* Container Styling */
+.signup-container {
+  width: 100%;
+  max-width: 350px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading */
+h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 14px;
+  color: #666;
+}
+
+p a {
+  color: #6e8efb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Form Styling */
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields */
+.input-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  background: transparent;
+}
+
+.input-label {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  font-size: 16px;
+  color: #666;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+/* Floating Label Effect */
+.input-field:focus ~ .input-label,
+.input-field:not(:placeholder-shown) ~ .input-label {
+  top: -10px;
+  font-size: 12px;
+  color: #6e8efb;
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #6e8efb;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #5a78e0;
+}
+
+/* Divider */
+.divider {
+  margin: 20px 0;
+  position: relative;
+  font-size: 14px;
+  color: #666;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  background: #ccc;
+  top: 50%;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 30px;
+  cursor: pointer;
+}
